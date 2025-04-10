@@ -1,4 +1,5 @@
 ---
+import Layout from '../layouts/Layout.astro'
 import Missao from '../components/Missao.astro'
 import Projeto from '../components/Projeto.astro'
 import CodigoConduta from '../components/CodigoConduta.astro'
@@ -6,19 +7,11 @@ import PoliticaEtica from '../components/PoliticaEtica.astro'
 import Contato from '../components/Contato.astro'
 ---
 
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Favela Hacker</title>
-  </head>
-  <body style="background-color: #121212; color: #00ff00; font-family: 'Courier New', monospace; padding: 2rem;">
-    <h1>FAVELA HACKER</h1>
-
-    <Missao />
-    <Projeto />
-    <CodigoConduta />
-    <PoliticaEtica />
-    <Contato />
-  </body>
-</html>
+<Layout title="Favela Hacker">
+  <h1>FAVELA HACKER</h1>
+  <Missao />
+  <Projeto />
+  <CodigoConduta />
+  <PoliticaEtica />
+  <Contato />
+</Layout>
