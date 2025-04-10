@@ -1,12 +1,11 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Missao from '../components/Missao.astro'
+import Projeto from '../components/Projeto.astro'
+import CodigoConduta from '../components/CodigoConduta.astro'
+import PoliticaEtica from '../components/PoliticaEtica.astro'
+import Contato from '../components/Contato.astro'
 ---
 
----
----
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -16,35 +15,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <body style="background-color: #121212; color: #00ff00; font-family: 'Courier New', monospace; padding: 2rem;">
     <h1>FAVELA HACKER</h1>
 
-    <section>
-      <h2>🎯 Missão</h2>
-      <p>Hackear a desigualdade com conhecimento e tecnologia.<br />
-      Transformar vidas através da educação em cibersegurança.<br />
-      Capacitar jovens de comunidades vulneráveis com habilidades digitais.</p>
-    </section>
-
-    <section>
-      <h2>🧩 Nosso Projeto</h2>
-      <p>Favela Hacker é uma porta de entrada para o mundo da tecnologia.<br />
-      Ensinamos cibersegurança para quem nunca teve acesso.<br />
-      Nosso objetivo é formar hackers do bem nas comunidades.</p>
-    </section>
-
-    <section>
-      <h2>📜 Código de Conduta</h2>
-      <p>Respeito acima de tudo. Compartilhe conhecimento. Erros fazem parte. Nada de práticas ilegais.</p>
-    </section>
-
-    <section>
-      <h2>🛡️ Política de Uso Ético</h2>
-      <p>O conhecimento aprendido aqui deve ser usado para proteger, construir e transformar.<br />
-      Quem usar mal será desligado do projeto.</p>
-    </section>
-
-    <section>
-      <h2>✉️ Contato</h2>
-      <p>Quer participar, ajudar ou saber mais?<br />
-      Envie um e-mail para: <a href="mailto:contato@favelahacker.org">contato@favelahacker.org</a></p>
-    </section>
+    <Missao />
+    <Projeto />
+    <CodigoConduta />
+    <PoliticaEtica />
+    <Contato />
   </body>
 </html>
